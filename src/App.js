@@ -1,10 +1,11 @@
 import React from 'react';
-import { BrowserRouter as Router, Route, Routes, Link } from 'react-router-dom';
+import { HashRouter as Router, Route, Routes, Link } from 'react-router-dom';
 import Home from './Components/Home';
 import About from './Components/About'; 
 import Projects from './Components/Projects';
 
 function App() {
+
   const data = {
     "name" : "Sri Charan Reddy",
     "role": "Full Stack Web Developer",
@@ -36,6 +37,21 @@ function App() {
     },
     
   ]
+    const education = [
+      {
+        "education": "Bachelor of Engineering",
+        "college": "Vasavi College Of Engineering",
+        "duration": "2020 - 2024",
+        "marks": "9.3 / 10",
+      },
+      {
+        "education": "Intermediate",
+        "college": "Narayana Junior College",
+        "duration": "2018 - 2020",
+        "marks": "990 / 1000",
+      },
+
+    ]
   return (
     <Router>
         <header className="bg-gray-100 sticky top-0 w-full h-16 flex justify-center items-center">
@@ -47,7 +63,7 @@ function App() {
         </header>
         <Routes>
           <Route path="/" element={<Home data={data}/>} />
-          <Route path="/about" element={<About/>} />
+          <Route path="/about" element={<About education={education}/>} />
           <Route path="/projects" element={<Projects projects={projects}/>} />
         </Routes>
     </Router>

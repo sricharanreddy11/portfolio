@@ -11,13 +11,13 @@ function Home(props) {
           {props.data.description}
         </p>
         <div className="flex justify-start space-x-4 mt-6">
-          <a href={props.data.github} target="_blank" rel="noreferrer" className="text-gray-600 hover:text-gray-900"><img className="w-10 h-10" src="https://img.icons8.com/?size=100&id=12598&format=png&color=000000" alt="github logo"/></a>
-          <a href={props.data.linkedin} target="_blank" rel="noreferrer" className="text-gray-600 hover:text-gray-900"><img className="w-10 h-10" src="https://img.icons8.com/?size=100&id=447&format=png&color=000000" alt="linkedin logo"/></a>
-          <a href={props.data.mail} target="_blank" rel="noreferrer" className="text-gray-600 hover:text-gray-900"><img className="w-10 h-10" src="https://img.icons8.com/?size=100&id=53388&format=png&color=000000" alt="mail logo"/></a>
-          <a href={props.data.twitter} target="_blank" rel="noreferrer" className="text-gray-600 hover:text-gray-900"><img className="w-10 h-10" src="https://img.icons8.com/?size=100&id=437&format=png&color=000000" alt="twitter logo"/></a>
+          <a href={props.data.github} target="_blank" rel="noreferrer" className="text-gray-600 hover:text-gray-900"><img className="w-10 h-10" src="https://img.icons8.com/?size=100&id=3tC9EQumUAuq&format=png&color=000000" alt="github logo"/></a>
+          <a href={props.data.linkedin} target="_blank" rel="noreferrer" className="text-gray-600 hover:text-gray-900"><img className="w-10 h-10" src="https://img.icons8.com/?size=100&id=8808&format=png&color=000000" alt="linkedin logo"/></a>
+          <a href={props.data.mail} target="_blank" rel="noreferrer" className="text-gray-600 hover:text-gray-900"><img className="w-10 h-10" src="https://img.icons8.com/?size=100&id=53435&format=png&color=000000" alt="mail logo"/></a>
+          <a href={props.data.twitter} target="_blank" rel="noreferrer" className="text-gray-600 hover:text-gray-900"><img className="w-10 h-10" src="https://img.icons8.com/?size=100&id=8824&format=png&color=000000" alt="twitter logo"/></a>
         </div>
       </div>
-      <img className="w-52 h-52 mr-32 rounded-2xl" src="https://i.pinimg.com/originals/8d/4c/40/8d4c404b1fc27606e8f37e8d01bd8f49.jpg" alt="instagram logo"/>
+      <img className="w-52 h-52 mr-32 rounded-2xl -rotate-6" src="https://i.pinimg.com/originals/8d/4c/40/8d4c404b1fc27606e8f37e8d01bd8f49.jpg" alt="instagram logo"/>
     </div>
   );
 }
