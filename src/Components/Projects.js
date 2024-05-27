@@ -2,9 +2,9 @@ import React from 'react'
 
 const Projects = (props) => {
   return (
-    <div className="flex flex-wrap items-center justify-center w-full h-screen bg-gray-100">
-        <h1 className='text-5xl font-bold mt-2'>What I've Made</h1>
-        <p className='mx-20 text-pretty text-base px-6'>
+    <div className="flex flex-grow flex-wrap items-center justify-center w-full h-full md:h-screen bg-gray-100">
+        {/* <h1 className='text-2xl md:text-5xl font-bold mt-2 mb-2'>What I've Made</h1> */}
+        <p className='mx-3 md:mx-20 text-pretty text-base px-6'>
           Each project represents a unique challenge that I tackled by leveraging strong analytical skills, implementing innovative solutions. I'm passionate about Web developement and Machine Learning, and this passion is reflected in the dedication and creativity I bring to every project I undertake.
         </p>
         {
