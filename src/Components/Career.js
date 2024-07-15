@@ -2,7 +2,7 @@ import React from 'react'
 
 const Career = (props) => {
     return (
-        <div className="flex-col flex-grow items-center text-center justify-center w-full h-full bg-gray-100">
+        <div className="flex-col flex-grow items-center text-center justify-center w-full h-full background">
           {/* <h1 className='text-2xl md:text-5xl font-bold p-6 mb-2'>Where I come from</h1> */}
           <div className='flex flex-col items-center md:flex-row pt-16'>
           <p className='mx-3 pb-5 md:mx-20 text-gray-60 px-6 pt-4'>
@@ -24,11 +24,11 @@ export default Career
 const Education = ({ education }) => {
     return (
       <div className="relative overflow-x-auto p-16">
-        <h2 className="flex gap-3 items-center m-auto text-lg font-bold md:flex-col md:gap-2 mb-5">
-          Educational Background
+        <h2 className="heading">
+            Educational Background
         </h2>
         <table className="w-full text-sm text-left rtl:text-right text-gray-500">
-          <thead className="text-xs text-gray-700 uppercase bg-gray-50">
+          <thead className="text-xs text-gray-700 uppercase inner-background">
             <tr>
               <th scope="col" className="px-6 py-3">
                 Education
@@ -69,11 +69,11 @@ const Education = ({ education }) => {
   const Experience = ({experience}) => {
     return (
       <div className="relative overflow-x-auto p-16">
-        <h2 className="flex gap-3 items-center m-auto text-lg font-bold md:flex-col md:gap-2 mb-5">
-          Proffesional Experience
+        <h2 className="heading">
+            Proffesional Experience
         </h2>
         <table className="w-full text-sm text-left rtl:text-right text-gray-500">
-          <thead className="text-xs text-gray-700 uppercase bg-gray-50">
+          <thead className="text-xs text-gray-700 uppercase inner-background">
             <tr>
               <th scope="col" className="px-6 py-3">
                 Role
@@ -108,14 +108,17 @@ const Education = ({ education }) => {
 const Certifications = ({certifications}) =>{
   return (
     <div className="relative overflow-x-auto p-16">
-      <h2 className="flex gap-3 items-center m-auto text-lg font-bold md:flex-col md:gap-2 mb-5">
-        Certfications
-      </h2>
+    <h2 className="heading">
+      Certifications
+    </h2>
       <table className="w-full text-sm text-left rtl:text-right text-gray-500">
-        <thead className="text-xs text-gray-700 uppercase bg-gray-50">
+        <thead className="text-xs text-gray-700 uppercase inner-background">
           <tr>
             <th scope="col" className="px-6 py-3">
               Course
+            </th>
+            <th scope="col" className="px-6 py-3">
+              Provider
             </th>
             <th scope="col" className="px-6 py-3">
               Instructor
@@ -137,9 +140,10 @@ const Certifications = ({certifications}) =>{
               >
                 {cer.course}
               </th>
+              <td className="px-6 py-4">{cer.provider}</td>
               <td className="px-6 py-4">{cer.instructor}</td>
               <td className="px-6 py-4">{cer.duration}</td>
-              <td className="px-6 py-4"> <a href="{cer.link}">View Certification</a></td>
+              <td className="px-6 py-4"> <a target='_blank' rel="noopener noreferrer" href={cer.link}>View</a></td>
             </tr>
           ))}
         </tbody>

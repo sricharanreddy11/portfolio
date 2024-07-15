@@ -3,7 +3,7 @@ import { Link } from 'react-router-dom'
 
 const Footer = () => {
   return (
-    <div className="bg-gray-100 max-h-screen rounded-lg bottom-0 shadow">
+    <div className="background  max-h-screen rounded-lg bottom-0 shadow">
         <div className="w-full mx-auto max-w-screen-xl p-4 md:flex md:items-center md:justify-between">
           <span className="text-sm text-gray-500 sm:text-center hover:underline ">© 2024 Sri Charan Reddy
         </span>

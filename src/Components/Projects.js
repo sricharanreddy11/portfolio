@@ -2,14 +2,17 @@ import React from 'react'
 
 const Projects = (props) => {
   return (
-    <div className="flex flex-grow flex-wrap items-center justify-center w-full h-full md:h-screen bg-gray-100">
-        {/* <h1 className='text-2xl md:text-5xl font-bold mt-2 mb-2'>What I've Made</h1> */}
-        <p className='mx-3 md:mx-20 text-pretty text-base px-6'>
-          Each project represents a unique challenge that I tackled by leveraging strong analytical skills, implementing innovative solutions. I'm passionate about Web developement and Machine Learning, and this passion is reflected in the dedication and creativity I bring to every project I undertake.
-        </p>
-        {
+    <div className="flex flex-col items-center justify-center w-full h-full md:h-screen background">
+      <p className='mx-3 md:mx-20 text-gray-700 text-base px-6 text-center mb-10'>
+        Each project represents a unique challenge that I tackled by leveraging strong analytical skills, implementing innovative solutions. I'm passionate about Web development and Machine Learning, and this passion is reflected in the dedication and creativity I bring to every project I undertake.
+      </p>
+      <h2 className="heading">
+      Projects I've worked on
+    </h2>
+      <div className="flex flex-wrap justify-center">
+      {
         props.projects.map((project, index) => (
-          <div key={index} className="max-w-xs rounded overflow-hidden shadow-lg m-4">
+          <div key={index} className="max-w-xs rounded overflow-hidden shadow-lg m-4 pt-4 inner-background">
             <img className="w-10 h-10 mx-6" src={project.logo} alt="django logo"/>
             <div className="px-6 py-4">
               <div className="font-bold text-l mb-2">{project.name}</div>
@@ -25,6 +28,8 @@ const Projects = (props) => {
           </div>
         ))
       }
+
+      </div>
     </div>
   )
 }

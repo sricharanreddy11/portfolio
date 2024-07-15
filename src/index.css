@@ -1,3 +1,15 @@
 @tailwind base;
 @tailwind components;
 @tailwind utilities;
+
+.background {
+    @apply  bg-gradient-to-r from-slate-100 to-slate-200;
+}
+
+.inner-background {
+    @apply  bg-gradient-to-r from-slate-50 to-slate-100;
+}
+
+.heading {
+    @apply text-2xl font-bold text-gray-900 mb-10 border-b-4 border-gray-500
+}
